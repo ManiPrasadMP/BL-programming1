@@ -1,5 +1,7 @@
 package objectOriented;
 
+import java.util.Scanner;
+
 public class MyDate {
 
 	int day, month, year;
@@ -36,5 +38,18 @@ public class MyDate {
 
 	String format() {
 		return String.format("%02d-%02d-%04d", day, month, year);
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the day,month and year :");
+		int day = sc.nextInt();
+		int month = sc.nextInt();
+		int year = sc.nextInt();
+		MyDate date = new MyDate(day,month,year);
+		System.out.println("Given year is  leap ? "+date.isLeap());
+		System.out.println("given date : "+date.format());
+		date.incrementDay();
+		System.out.println("incremented date : "+date.format());
 	}
 }

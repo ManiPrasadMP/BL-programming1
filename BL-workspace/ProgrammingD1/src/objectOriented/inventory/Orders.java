@@ -1,4 +1,4 @@
-package objectOriented;
+package objectOriented.inventory;
 
 class Orders {
     public boolean requestProduct(WareHouse w, int productId, int qty) {

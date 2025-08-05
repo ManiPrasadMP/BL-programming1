@@ -1,4 +1,4 @@
-package objectOriented;
+package objectOriented.inventory;
 
 class Product {
     int id;
@@ -20,4 +20,9 @@ class Product {
         }
         return false;
     }
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", quantity=" + quantity + "]";
+	}
 }

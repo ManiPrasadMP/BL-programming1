@@ -1,4 +1,4 @@
-package objectOriented;
+package objectOriented.student_report;
 
 class Subject {
     String name;

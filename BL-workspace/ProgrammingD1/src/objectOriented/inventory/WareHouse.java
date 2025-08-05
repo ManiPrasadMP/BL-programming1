@@ -1,4 +1,4 @@
-package objectOriented;
+package objectOriented.inventory;
 
 class WareHouse {
     Product[] products;

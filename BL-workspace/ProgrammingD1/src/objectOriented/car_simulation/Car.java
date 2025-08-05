@@ -1,4 +1,4 @@
-package objectOriented;
+package objectOriented.car_simulation;
 
 class Car {
     int speed, fuel, distance;
@@ -8,10 +8,13 @@ class Car {
         this.fuel = fuel;
     }
 
-    public void drive(int hours) {
-        int canDrive = Math.min(hours, fuel);
-        distance += canDrive * speed;
-        fuel -= canDrive;
+    public void drive(int hrs) {
+        if(fuel<hrs*10) {
+        	System.out.println("Low fuel");
+        	return;
+        }
+        fuel -=hrs*10;
+        	
     }
 
     public void status() {
